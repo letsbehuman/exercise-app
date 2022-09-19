@@ -1,5 +1,6 @@
 import React from 'react';
 import { AiFillPlayCircle } from 'react-icons/ai';
+import RoutineList from './components/RoutineList';
 
 const Workout = () => {
   return (
@@ -29,15 +30,7 @@ const Workout = () => {
           {'30 seg'}
         </div>
       </div>
-      <div className="flex flex-col bg-green-400 pb-10 ">
-        <h3 className="mx-auto mt-3 mb-2">Your Routines</h3>
-        <div className="bg-green-200 w-[80%] text-center p-1 space-y-3  mx-auto rounded-lg">
-          <div className="mx-auto">routine1</div>
-          <div className="mx-auto">routine2</div>
-          <div className="mx-auto">routine3</div>
-          <div className="mx-auto">routine4</div>
-        </div>
-      </div>
+      <RoutineList />
     </div>
   );
 };
